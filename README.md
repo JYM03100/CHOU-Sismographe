@@ -1,4 +1,4 @@
-# CHOU-Sismographe
+# CHOU -Sismographe     
 
 Agent d’analyse de métadonnées sociales comparant deux fenêtres temporelles "Gilet Jaune" (2016–2019 et 2026→présent). CHOU-Sismographe détecte pics, ruptures, similarités mathématiques et génère des visualisations interactives, sans analyser de contenu textuel ni données personnelles.
 
