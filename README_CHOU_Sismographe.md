@@ -1,15 +1,24 @@
-# CHOU -Sismographe     
 
-Agent d’analyse de métadonnées sociales comparant deux fenêtres temporelles "Gilet Jaune" (2016–2019 et 2026→présent). CHOU-Sismographe détecte pics, ruptures, similarités mathématiques et génère des visualisations interactives, sans analyser de contenu textuel ni données personnelles.
+---
 
+# 🛡 Respect de la vie privée
 
-\# CHOU‑Sismographe  
+Le CHOU‑Sismographe :
+- n’analyse aucun texte
+- ne lit aucun message
+- ne collecte aucune donnée personnelle
+- ne stocke aucune information sensible
 
-Agent d’analyse de métadonnées sociales sur deux fenêtres temporelles
+Il ne manipule que des **métadonnées agrégées**.
 
+---
 
+# 🚀 Installation
 
-\---
+```bash
+pip install -r requirements.txt
+python scripts/sismographe.py
+
 
 
 
@@ -100,31 +109,110 @@ CHOU‑Sismographe s’inscrit dans la logique du système \*\*CHOU\*\*, qui vis
 
 
 ```
-
-CHOU-Sismographe/
-
-├─ README.md
-
-├─ LICENSE
-
-├─ .gitignore
-
-├─ chou\_sismos\_v3.py          ← code principal de l’agent
-
-├─ data/                      ← données locales (non versionnées)
-
-│   ├─ historique\_2016\_2019.csv
-
-│   └─ actuel\_2026\_present.csv
-
-├─ logs/                      ← journaux d’exécution
-
-├─ exports/                   ← graphiques, rapports, images
-
-└─ visualisations/            ← notebooks, figures
-
-```
-
+CHOU-SISMOGRAPHE
+├───app
+│   ├───android
+│   │   │   main.py
+│   │   │
+│   │   ├───api
+│   │   │       chou_api.py
+│   │   │
+│   │   └───ui
+│   │           android_app.py
+│   │
+│   └───windows12
+│       │   companion.py
+│       │
+│       ├───api
+│       │       chou_api.py
+│       │
+│       └───ui
+│               adaptive_companion.py
+│               auto_healing.py
+│               auto_refresh.py
+│               chou_service.py
+│               cloud_sync.py
+│               copilot_card.py
+│               copilot_integration.py
+│               dashboard.py
+│               deep_telemetry.py
+│               desktop_overlay.py
+│               event_0500.py
+│               hyper_companion.py
+│               installer.py
+│               kernel_bridge.py
+│               live_dashboard.py
+│               live_tile.py
+│               meta_companion.py
+│               multi_device.py
+│               multi_user.py
+│               notification_center.py
+│               os_autopilot.py
+│               os_guardian.py
+│               scheduler_integration.py
+│               secure_mode.py
+│               shortcut.py
+│               sidebar.py
+│               sidebar_copilot.py
+│               smart_notification.py
+│               system_healing.py
+│               system_wide_companion.py
+│               taskbar_companion.py
+│               telemetry.py
+│               tile.py
+│               voice-copilot.py
+│               voice_command.py
+│               widget.py
+│               widget_animated.py
+│               wigget_dynamic.py
+│
+├───data
+│   ├───metadata
+│   ├───processed
+│   └───raw
+├───exports
+│   ├───reports
+│   ├───tables
+│   └───visualisations
+├───logs
+│   ├───alerts
+│   └───runs
+├───scripts
+│       sismographe.py
+│       visualisation.py
+│
+├───src
+│   ├───agents
+│   │       android_agent.py
+│   │       copilot_interface.py
+│   │       export_agent.py
+│   │       interpretation_ia.py
+│   │       scheduler.py
+│   │       sismographe_agent.py
+│   │       visualisation_agent.py
+│   │       windows12_agent.py
+│   │
+│   ├───core
+│   │       comparateur.py
+│   │       fractales.py
+│   │       indices.py
+│   │       loader.py
+│   │       ruptures.py
+│   │
+│   └───utils
+│           anomalies.py
+│           courbes.py
+│           heatmap.py
+│           radar.py
+│           sync.py
+│           timeline.py
+│           visualisation_interactive.py
+│
+└───tests
+        test_fractales.py
+        test_indices.py
+        test_loader.py
+        test_ruptures.py
 
 
 Les dossiers `data/`, `logs/`, `exports/` sont ignorés par Git (voir `.gitignore`).

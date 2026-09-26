@@ -1,4 +1,11 @@
 pandas
-matplotlib
 numpy
+matplotlib
+seaborn
 scipy
+streamlit
+ruptures (changepoint)
+plotly
+jupyter
+fastapi
+uvicorn
